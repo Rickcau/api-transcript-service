@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "api_transcript_service": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7127",
+      "launchBrowser": false
+    }
+  }
+}

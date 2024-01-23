@@ -1,0 +1,84 @@
+﻿0:0:0.0 --> 0:0:0.720
+Steve Smith
+Sounds good.
+0:0:3.850 --> 0:0:5.110
+Sam Johnson
+Yeah, that's it.
+0:0:4.240 --> 0:0:6.770
+Steve Smith
+So I are there any other people who will be joining?
+0:0:6.780 --> 0:0:8.130
+Steve Smith
+I see a long list though.
+0:0:9.80 --> 0:0:9.470
+Sam Johnson
+Yes.
+0:0:9.480 --> 0:0:12.680
+Sam Johnson
+So most of the list are related to the.
+0:0:16.370 --> 0:0:17.610
+Steve Smith
+Got it, got it.
+0:0:14.420 --> 0:0:25.270
+Sam Johnson
+IT services and the Contoso team and Billy is the 4th manager who asked to record this meeting because it's too late on his time.
+0:0:26.100 --> 0:0:31.810
+Sam Johnson
+So we asked to work out this session and this session will be a kickoff or for the GitHub copilot.
+0:0:31.820 --> 0:0:35.950
+Sam Johnson
+I'm just saying that for the recording I'm GitHub copilot, Nick testing kickoff.
+0:0:35.960 --> 0:0:44.820
+Sam Johnson
+Nick will introduce the project, the process and also we will discuss about the metrics and if there is any kind of questions.
+0:0:47.320 --> 0:0:47.850
+Sam Johnson
+We'll hit.
+0:0:47.960 --> 0:0:48.820
+Sam Johnson
+We are here to answer.
+0:0:50.230 --> 0:0:50.410
+Steve Smith
+Yeah.
+0:0:50.610 --> 0:0:51.70
+Sam Johnson
+That's it.
+0:0:51.120 --> 0:0:51.730
+Sam Johnson
+I move it to you.
+0:0:52.380 --> 0:0:55.190
+Steve Smith
+So hi everyone, I'm Nick.
+0:0:55.200 --> 0:1:22.320
+Steve Smith
+I'm part of the Contoso team and we are here to actually do an assessment of GitHub copilot and a quantitative assessment with some of the teams within Fabrikam to understand how a GitHub copilot can actually help improve the sprints and speed up as well as velocity and code quality of the code that the teams are generating.
+0:1:22.830 --> 0:1:29.890
+Steve Smith
+And essentially we are here to actually discuss this GitHub copilot we testing.
+0:1:31.280 --> 0:1:34.710
+Steve Smith
+And going to the team introductions really quickly.
+0:1:37.690 --> 0:1:44.180
+Steve Smith
+So and on the Fabrikam side, Jon and Dave are a leading us for this.
+0:1:44.250 --> 0:1:52.520
+Steve Smith
+These two projects actually two projects that we're working on and from Contoso, Sue and Sponge Bob are leads.
+0:1:53.590 --> 0:1:56.80
+Steve Smith
+I'm the general SME.
+0:1:56.290 --> 0:2:5.280
+Steve Smith
+Square Pants and PaperWeight are DevOps SMEs and Betty has been helping with both the projects execution.
+0:2:5.890 --> 0:2:12.50
+Steve Smith
+So really looking at very quickly looking at GitHub copilot next slide.
+0:2:14.260 --> 0:2:52.310
+Steve Smith
+Uh, so Microsoft, so Contoso actually partners with Microsoft and GitHub on on variety of projects, and particularly the GitHub copilot and GitHub copilot has been like a very successful pilot within Microsoft several teams, as you see in the numbers here, several teams within Microsoft have been using and also contributing back to improving GitHub copilot such that wider audience such as Contoso, Fabrikam other tech companies can actually start leveraging the GitHub copilot.
+0:2:52.320 --> 0:3:2.610
+Steve Smith
+GitHub copilot is essentially like a general tool where in the back end is open the eye, GPT, 3.5 and four.
+0:3:3.20 --> 0:3:13.100
+Steve Smith
+And sorry, 3 point 3.5 and four and also it is it is learned on the corpus of large corpus of code.
