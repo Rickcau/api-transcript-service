@@ -59,5 +59,7 @@ In this example, I demonstrate how to leverage an Isolated Azure Function Blob T
 
 2. Add another Blob Trigger that allows for Document translation services i.e. convert documents written in English into other languages.  In other words you can convert the meeting summary into other languages.  
 
+## Additional Resources to consider
 
+[Understanding Semantic Kernel](https://learn.microsoft.com/en-us/semantic-kernel/agents/kernel/?tabs=Csharp)
 
