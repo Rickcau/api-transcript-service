@@ -5,7 +5,7 @@ In this example, I demonstrate how to leverage an Isolated Azure Function Blob T
 
 1. Isolated Azure Functions with a Blob Trigger
 2. Azure BlobServiceClient for writing to containers
-3. Semantic Kernel for AI Summarization purposes
+3. Semantic Kernel for AI Summarization purposes using Dependency Injection for the Kernel
 4. StreamReader and Regex for file parsing
 5. Environment.GetEnvironmentVariable to read settings from **local.settings.json** and Azure Configuration Settings
 6. Custom TranscriptService to condense the transcript down into a format that results in fewer tokens being used by AI
