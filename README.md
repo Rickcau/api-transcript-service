@@ -1,5 +1,5 @@
 # Transcript Summary API - Blob Trigger
-In this example, I demonstrate how to leverage an Isolated Azure Function Blob Trigger that parses a Teams Meeting Transcript into a condensed format that is then used by AI summarize the condensed transcript.  
+In this example, I demonstrate how to leverage an Isolated Azure Function Blob Trigger that parses a Teams Meeting Transcript into a condensed format that is then used by AI to summarize the condensed transcript.  
 
 ## Technologies used
 
