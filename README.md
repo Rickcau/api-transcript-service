@@ -1,6 +1,8 @@
 # Transcript Summary API - Blob Trigger
 In this example, I demonstrate how to leverage an Isolated Azure Function Blob Trigger that parses a Teams Meeting Transcript into a condensed format that is then used by AI to summarize the condensed transcript.  
 
+The purpose for condensing the transcript is to reduce the number of AI tokens needed to summarize the meeting.  Simply put, there are better formats that can be used when asking AI to summarize the meeting which makes it more efficent for AI to summarize and reduces token usage.  If needed you could augment the TranscriptService class to chunk the data, especially if the file is large. 
+
 ## Technologies used
 
 1. Isolated Azure Functions with a Blob Trigger
