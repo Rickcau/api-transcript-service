@@ -15,9 +15,10 @@ namespace api_transcript_service.Util
         private Kernel _kernel;
         private string _promptSummarize = @"SUMMARIZE THE CONVERSATION IN 20 BULLET POINTS OR LESS
 
-        SUMMARY MUDT BE:
+        SUMMARY MUST BE:
         - WORKPLACE / FAMILY SAFE NO SEXISM, RACISM OR OTHER BIAS/BIGOTRY
         - G RATED
+        - IF THERE ARE ANY  INCONSISTENCIES IN THE TRANSCRIPT, DO YOUR BEST TO CALL THOSE OUT
 
         {{$input}}";
 

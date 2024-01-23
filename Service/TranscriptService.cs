@@ -24,7 +24,7 @@ namespace api_transcript_service.Service
         private Stream _fileStream;
 
         // A constructor that takes a file name as a parameter
-        public Transcript(ref Stream fileStream, string fileName)
+        public Transcript(Stream fileStream, string fileName)
         {
             // Assign the file name to the property
             FileName = fileName;
@@ -99,5 +99,15 @@ namespace api_transcript_service.Service
             reader.Close();
             return true;
         }
+
+        public async Task<bool> ReformattedTranscriptTest(Stream stream)
+        {
+            using var blobStreamReader = new StreamReader(stream);
+            var content = await blobStreamReader.ReadToEndAsync();
+            Console.WriteLine(content);
+
+            return true;
+        }
     }
+
 }
