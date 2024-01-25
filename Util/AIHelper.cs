@@ -22,6 +22,14 @@ namespace api_transcript_service.Util
 
         {{$input}}";
 
+        private string _promptTranslation = @"Translate the input below into {{$language}}
+
+        MAKE SURE YOU ONLY USE {{$language}}.
+
+        {{$input}}
+
+        Translation:";
+
 
         public AIHelper(Kernel kernel)
         {
@@ -36,6 +44,16 @@ namespace api_transcript_service.Util
 
             return response.GetValue<string>() ?? "";
         }
+
+        public async Task<string> GetTranslationAsync(string content, string language)
+        {
+            var translationFunction = _kernel.CreateFunctionFromPrompt(_promptTranslation, executionSettings: new OpenAIPromptExecutionSettings { MaxTokens = 2000, Temperature = 0.7, TopP = 0.0 });
+
+            var response = await _kernel.InvokeAsync(translationFunction, new() { ["input"] = content, ["language"] = language });
+
+            return response.GetValue<string>() ?? "";
+        }
+
 
     }
 }
