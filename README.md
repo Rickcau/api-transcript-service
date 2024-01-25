@@ -1,16 +1,37 @@
+# Updates
+1/25/24 - Added support for language translation.
+
 # Transcript Summary API - Blob Trigger
-In this example, I demonstrate how to leverage an Isolated Azure Function Blob Trigger that parses a Teams Meeting Transcript into a condensed format that is then used by AI to summarize the condensed transcript.  
 
-The purpose for condensing the transcript is to reduce the number of AI tokens needed to summarize the meeting.  Simply put, there are better formats that can be used when asking AI to summarize the meeting which makes it more efficent for AI to summarize and reduces token usage.  If needed you could augment the TranscriptService class to chunk the data, especially if the file is large. 
+In this example, I provide an example of how leverage an Isolated Azure Function Blob Trigger that parses a Teams Meeting Transcript into a condensed format that is then used by AI to summarize the condensed transcript.  I also expose an HTTP Trigger for Language Translation purposes.  In the HTTP Post request you can pass a FileName, Container and target Language and the API for translate the file into the target language.
 
-## Technologies used
+# Language Translation API - Http Trigger
+
+When calling the Translation API you need to pass the following JSON structure in the request body.
+
+    ~~~
+         {
+            "fileName" : "Summary#1baa3e6e-46d7-4039-9581-871766800237#someemail@test.com#.txt",
+            "containerName" : "summary",
+            "targetLanguage" : "Spanish"
+         }
+    ~~~
+
+The **fileName** is a valid file name that exists in the target container.  The target contain needs to exist in the storage account associated with the **BlobConnection** environment variable.
+
+The purpose for condensing the transcript is to reduce the number of AI tokens needed to summarize the meeting.  Simply put, there are better formats that can be used when asking AI to summarize the meeting which makes it more efficient for AI to summarize and reduces token usage.  If needed you could augment the TranscriptService class to chunk the data, especially if the file is large. 
+
+The API will open the file and read it's contents into a memory stream and pass it's contents to a Semantic Kernel Translation Plugin for translation and the translated text will be returned to the client.
+
+## Technologies
 
 1. Isolated Azure Functions with a Blob Trigger
 2. Azure BlobServiceClient for writing to containers
 3. Semantic Kernel for AI Summarization purposes using Dependency Injection for the Kernel
+4. Semantic Kernel SKPrompts and Plugins 
 4. StreamReader and Regex for file parsing
 5. Environment.GetEnvironmentVariable to read settings from **local.settings.json** and Azure Configuration Settings
-6. Custom TranscriptService to condense the transcript down into a format that results in fewer tokens being used by AI
+
 
 ## Requirements for this example
 
