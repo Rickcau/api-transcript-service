@@ -3,7 +3,7 @@
 
 # Transcript Summary API - Blob Trigger
 
-In this example, I provide an example of how leverage an Isolated Azure Function Blob Trigger that parses a Teams Meeting Transcript into a condensed format that is then used by AI to summarize the condensed transcript.  I also expose an HTTP Trigger for Language Translation purposes.  In the HTTP Post request you can pass a FileName, Container and target Language and the API for translate the file into the target language.
+In this example, I provide an example of how leverage an Isolated Azure Function Blob Trigger that parses a Teams Meeting Transcript into a condensed format that is then used by AI to summarize the condensed transcript.  I also expose an HTTP Trigger for Language Translation purposes.  In the HTTP Post request you can pass a FileName, Container and target language and the API will translate the content into the target language.  This example is leveraging the Semantic Kernel SDK so extending it's capibilities is super simple.
 
 # Language Translation API - Http Trigger
 
