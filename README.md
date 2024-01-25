@@ -92,8 +92,8 @@ The API will open the file and read it's contents into a memory stream and pass 
 
 Below is an overview of the Architecture that could be leveraged with the Transcription Blob Trigger.
 
- ![]({{ site.baseurl }}/Architecture/Conversion-Summary-Architecture.jpg)
+ ![](./Architecture/Conversion-Summary-Architecture.jpg)
 
 Example architecture that could be leveraged for the Language Translation HTTP Trigger.
 
- ![]({{ site.baseurl }}/Architecture/Language-TranslationAPI.jpg)
+ ![](./Architecture/Language-TranslationAPI.jpg)
