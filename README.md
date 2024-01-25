@@ -17,6 +17,8 @@ When calling the Translation API you need to pass the following JSON structure i
          }
     ~~~
 
+**Important Note:**  I am not using the Azure AI Translation Service for the Language translation, I am simply using the GPT Language translation capabilities.  You could leverage the AI Translation Service by using Semantic Kernel Plugins with a Native Function that calls the AI Translation services.  Maybe I will implement that feature at a later date in this example. 
+
 The **fileName** is a valid file name that exists in the target container.  The target contain needs to exist in the storage account associated with the **BlobConnection** environment variable.
 
 The purpose for condensing the transcript is to reduce the number of AI tokens needed to summarize the meeting.  Simply put, there are better formats that can be used when asking AI to summarize the meeting which makes it more efficient for AI to summarize and reduces token usage.  If needed you could augment the TranscriptService class to chunk the data, especially if the file is large. 
@@ -86,3 +88,12 @@ The API will open the file and read it's contents into a memory stream and pass 
 
 [Understanding Semantic Kernel](https://learn.microsoft.com/en-us/semantic-kernel/agents/kernel/?tabs=Csharp)
 
+# Architecture
+
+Below is an overview of the Architecture that could be leveraged with the Transcription Blob Trigger.
+
+ ![]({{ site.baseurl }}/Architecture/Conversion-Summary-Architecture.jpg)
+
+Example architecture that could be leveraged for the Language Translation HTTP Trigger.
+
+ ![]({{ site.baseurl }}/Architecture/Language-TranslationAPI.jpg)
