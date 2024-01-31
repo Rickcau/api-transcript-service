@@ -14,16 +14,16 @@ var host = new HostBuilder()
     {
         services.AddApplicationInsightsTelemetryWorkerService();
         services.ConfigureFunctionsApplicationInsights();
-        services.AddSingleton<Kernel>(s =>
+        services.AddTransient<Kernel>(s =>
         {
             var builder = Kernel.CreateBuilder();
             builder.AddAzureOpenAIChatCompletion(
                 _apiDeploymentName,
                 _apiEndpoint,
-                _apiKey                 
+                _apiKey
                 );
             return builder.Build();
-        });     
+        });
     })
     .Build();
 
